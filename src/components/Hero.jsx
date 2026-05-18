@@ -1,13 +1,19 @@
-import React from 'react'
+import React from "react";
+import "../styles/hero.css";
 
-export const Hero = () => {
+const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+    <div className="hero">
 
-export const Button = () => {
-    return(
-        <button>Hello</button>
-    )
-}
+      <img src="/dora.webp" alt="dora" />
+      <img src="/elena.jpg" alt="elena" />
+      <img src="/mickey mouse.webp" alt="mickey" />
+      <img src="/sofia.jpg" alt="sofia" />
+      <img src="/thunderman.jpg" alt="thunderman" />
+
+
+    </div>
+  );
+};
+
+export default Hero;

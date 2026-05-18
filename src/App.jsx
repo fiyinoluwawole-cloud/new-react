@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import {Hero, Button} from './components/Hero'
+import Hero from './components/Hero'
+import Nabar from './components/Nabar'
 
 const App = () => {
   return (
     <>
-    <div>App</div>
-    <Navbar/>
-    <Hero/>
-    <Button/>
+    {/* <div>Cinema</div> */}
+    {/* <Navbar/> */}
+    {/* <Button/> */}
+     <Nabar/>
+      <Hero/>
+   
   </>
     
   )

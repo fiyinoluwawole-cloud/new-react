@@ -1,0 +1,17 @@
+.hero{
+    background-color: black;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.hero img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
