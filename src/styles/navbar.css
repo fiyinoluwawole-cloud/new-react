@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    /* background-color: red; */
+    width: 25%;
+}
+
+.links{
+    /* background-color: green; */
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
