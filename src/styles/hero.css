@@ -1,5 +1,5 @@
 .hero{
-    background-color: black;
+    background-color: url('../elena.jpg');
     min-height: 100vh;
 
     display: flex;
