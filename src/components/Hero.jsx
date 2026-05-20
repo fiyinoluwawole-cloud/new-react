@@ -1,16 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/hero.css";
 
+
 const Hero = () => {
+
+  const [name] = useState(["Testy"])
   return (
     <div className="hero">
-
-      <img src="/dora.webp" alt="dora" />
-      <img src="/elena.jpg" alt="elena" />
-      <img src="/mickey mouse.webp" alt="mickey" />
-      <img src="/sofia.jpg" alt="sofia" />
-      <img src="/thunderman.jpg" alt="thunderman" />
-
+      <div>
+        {name.map((names) => (
+          <div>
+            {names}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

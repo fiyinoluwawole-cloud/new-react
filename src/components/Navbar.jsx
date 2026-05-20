@@ -4,7 +4,7 @@ import "../styles/navbar.css"
 const Navbar = () => {
 
     const [name, setName] = useState("Ade")
-    const [counter, setCounter] = useState(0)
+
 
     const handleName = () => {
         if (name == "Ade"){
@@ -12,12 +12,6 @@ const Navbar = () => {
         }else(
             setName("Ade")
         )
-    }
-
-    const handleCount = () => {
-        if (counter < 10000){
-            setCounter(counter + 1)
-        }
     }
 
     const styles = {
@@ -37,14 +31,11 @@ const Navbar = () => {
         <a style={styles} href="">Movies</a>
         <a style={styles} href="">Last Search</a>
      </div>
+    <input type="text" onChange={e => setName(e.target.value)} />
 
-     <button onClick={handleName}>Change name</button>
-   
-    </div>
+    <button onClick={handleName}>Hi, {name}</button>
+     </div>
 
-    <h1>hello {name}, welcome to the Movies</h1>
-        <h2>Count: {counter}</h2>
-          <button onClick={handleCount}>+1</button>
         </>
   )
 }
