@@ -1,20 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/nabar.css";
 
-const Navbar = () => {
+const Nabar = () => {
   return (
     <div className="nav">
 
       <h1>Cinema</h1>
 
       <div className='links'>
-        <a href="">Home</a>
-        <a href="">Movies</a>
-        <a href="">Last Search</a>
+        <NavLink className={({isActive}) => isActive ? "underline" : ""} to="/home">Home</NavLink>
+        <NavLink className={({isActive}) => isActive ? "underline" : ""} to="/movies">Movies</NavLink>
+        <NavLink className={({isActive}) => isActive ? "underline" : ""} to="/last-search">Last Search</NavLink>
      </div>
 
     </div>
   );
 };
 
-export default Navbar;
+export default Nabar;

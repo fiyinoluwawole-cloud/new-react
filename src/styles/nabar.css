@@ -1,4 +1,4 @@
-.nav{
+.nav {
     background-color: purple;
     color: white;
 
@@ -6,18 +6,44 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px;
+    padding: 20px 40px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
-.links{
+.nav h1 {
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
     color: white;
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-/* .nav ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-} */
+.links a:hover {
+    color: #f0d9ff;
+}
+
+.links a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}

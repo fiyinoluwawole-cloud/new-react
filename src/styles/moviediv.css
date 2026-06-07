@@ -1,0 +1,17 @@
+.moviediv{
+    background-color: #1c1c1c;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.smallbox{
+    background-color: red;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
