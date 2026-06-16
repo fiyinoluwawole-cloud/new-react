@@ -19,7 +19,7 @@ const Api = () => {
      {
         products.map((product) => 
             <div>
-                <img src={product.image[0]} alt="" />
+                <img src={product.images[0]} alt="" />
                 <h3>{product.title}</h3>
                 <h2>{product.price}</h2>
                 <h2>{product.category}</h2>

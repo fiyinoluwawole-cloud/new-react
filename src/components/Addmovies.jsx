@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Parent from './Parent';
 import MovieDiv from './MovieDiv';
 
-const Addmovies = () => {
+const Addmovies = (user) => {
     const [movieName, setMovieName] = useState("")
     const [movies, setMovies] = useState([])
     const [editIndex, setEditIndex] = useState(null)
@@ -87,6 +87,7 @@ const Addmovies = () => {
 
   return (
     <div>
+      <h1>Welcome, {user}</h1>
       <h1>Addmovie</h1>
 
         <input 
